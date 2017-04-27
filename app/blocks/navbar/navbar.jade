@@ -1,0 +1,7 @@
+mixin navbar(links)
+	+b.navbar&attributes(attributes)
+		block
+		ul.navbar__body
+			- each link in links
+				li.navbar__item
+					a.navbar__link(href= link.link)= link.title
