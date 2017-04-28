@@ -9,3 +9,6 @@ build:
 
 lint:
 	npm run lint
+
+deploy:
+	npm run deploy
