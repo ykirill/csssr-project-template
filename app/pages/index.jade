@@ -1,7 +1,9 @@
 extends /blocks/layout/layout
 
 include /blocks/page/page
+
 include /blocks/header/header
+include /blocks/story/story
 
 block head
 	- var pageTitle = 'CSSSR Project Template';
@@ -9,3 +11,4 @@ block head
 block content
 	+ page
 		+ header
+		+ story

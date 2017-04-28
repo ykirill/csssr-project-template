@@ -1,0 +1,8 @@
+include /blocks/container/container
+
+mixin story()
+	+e.SECTION.story&attributes(attributes)
+		block
+		+ container
+			div.cover
+				img.cover__image(src="/assets/images/story/cover.jpg" alt="Two fashion girl in the desert")
