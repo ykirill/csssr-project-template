@@ -1,14 +1,13 @@
-include /blocks/container/container
 include /blocks/navbar/navbar
 
 mixin header()
-	+b.header&attributes(attributes)
+	+b.HEADER.header&attributes(attributes)
 		block
-		+ container
-			.header__logo
-				span.logotype
-					a.logotype__link(href="javascript:void(0)") minimø
-			.header__nav
+		.container
+			+ e.__logo
+				+ b.SPAN.logotype
+					+ e.A.__link(href="javascript:void(0)") minimø
+			+ e.__nav
 				+ navbar([
 					{title: 'lifestyle', link: 'javascript:void(0)'},
 					{title: 'photodiary', link: 'javascript:void(0)'},

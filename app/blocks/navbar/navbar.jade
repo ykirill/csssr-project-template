@@ -1,7 +1,6 @@
 mixin navbar(links)
-	+b.navbar&attributes(attributes)
+	+b.UL.menu
 		block
-		ul.navbar__body
-			each link in links
-				li.navbar__item
-					a.navbar__link(href= link.link)= link.title
+		each link in links
+			+ e.LI.__item
+				+ e.A.__link(href= link.link)= link.title
