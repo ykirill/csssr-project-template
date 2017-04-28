@@ -1,0 +1,9 @@
+include /blocks/preview/preview
+
+mixin previews-list(previews)
+	+b.SECTION.previews-list&attributes(attributes)
+		block
+		.container
+			+ e.__content
+				each preview in previews
+					+ preview(preview)

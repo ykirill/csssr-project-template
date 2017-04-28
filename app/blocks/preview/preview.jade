@@ -1,0 +1,14 @@
+mixin preview(article)
+	+b.SECTION.preview&attributes(attributes)
+		block
+		+ e.__inner
+			+ e.__cover
+				+ b.IMG.cover(src=article.cover title=article.title)
+			+ e.__content
+				+ e.__header
+					+ e.__tag
+						+ b.A.tag(href=article.tag.href title=article.tag.title)= article.tag.title
+					+ e.__title
+						+ b.H2.title= title=article.title
+				+ e.__body
+					+e.P= article.text
