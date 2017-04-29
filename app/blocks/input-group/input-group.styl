@@ -1,0 +1,45 @@
+.input-group
+	display block
+
+	position relative
+	margin-x(auto)
+
+	width 400px
+
+	&_iconed
+
+		> .input-group__input
+			background-color transparent
+			border none
+			border-bottom 1px solid #000000
+
+			padding-y(10px)
+			padding-right 60px
+
+			position relative
+
+			width 100%
+
+			placeholderColor(text-primary)
+
+
+		> .input-group__submit
+			border none
+
+			position absolute
+
+			top 0
+			right 0
+			bottom 0
+
+	&_iconed
+
+		> .input-group__submit
+			background-color transparent
+			background-image url('../images/form/arrow.svg')
+			background-repeat no-repeat
+			background-position center center
+			background-size 75%
+
+			size(40px)
+

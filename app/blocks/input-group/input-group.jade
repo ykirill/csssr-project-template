@@ -1,0 +1,4 @@
+mixin input-group(config)
+	+b.input-group&attributes(attributes)
+		+ e.INPUT.__input(type=config.type placeholder=config.placeholder)
+		+ e.INPUT.__submit(type='submit' name='submit' value='')

@@ -42,3 +42,17 @@ retinaBackground($image, $ext = 'png') {
 		background-image url('../images/' + $image + '@2x.' + $ext)
 	}
 }
+
+placeholderColor($color)
+	&::-webkit-input-placeholder
+		color $color
+		opacity 1
+	&::-moz-placeholder
+		color $color
+		opacity 1
+	&:-ms-input-placeholder
+		color $color
+		opacity 1
+	&-moz-placeholder
+		color $color
+		opacity 1

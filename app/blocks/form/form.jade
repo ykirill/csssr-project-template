@@ -1,0 +1,7 @@
+mixin form(config)
+	+ b.DIV.form__container&attributes(attributes)
+		+ b.FORM.form(action=config.action method=config.method)
+			if config.title
+				+ e.HEADER.__header
+					+ e.H2.__title= config.title
+			block
