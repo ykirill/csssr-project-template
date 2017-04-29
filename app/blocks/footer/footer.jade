@@ -1,0 +1,23 @@
+include /blocks/icon/icon
+
+mixin footer()
+	+b.FOOTER.footer&attributes(attributes)
+		.container
+			block
+			+ e.__links
+				+ b.UL.links
+					+ e.LI.__item
+						+ e.A.__link(href='javascript:void(0)') Terms and conditions
+					+ e.LI.__item
+						+ e.A.__link(href='javascript:void(0)') Privacy
+			+ e.__socials
+				+ b.UL.socials
+					+ e.LI.__item
+						+ e.A.__social(href='javascript:void(0)')
+							+ icon('facebook-logo', true).socials__icon
+					+ e.LI.__item
+						+ e.A.__social(href='javascript:void(0)')
+							+ icon('twitter-logo', true).socials__icon
+					+ e.LI.__item
+						+ e.A.__social(href='javascript:void(0)')
+							+ icon('instagram-logo', true).socials__icon

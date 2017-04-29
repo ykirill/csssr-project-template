@@ -1,0 +1,47 @@
+.footer
+	display block
+
+	position absolute
+
+	bottom 0
+
+	padding-y(40px)
+
+	width 100%
+
+	clearfix()
+
+	&_gray
+		background-color #f0f0f0
+
+	&__links, &__socials
+		float left
+		width 50%
+
+
+.links
+
+	&__item
+		display inline-block
+
+		&:not(:first-child)
+			margin-left 20px
+.socials
+	text-align right
+
+	&:before
+		content 'Follow'
+		display inline-block
+		color black
+
+	&__item
+		display inline-block
+		margin-left 20px
+
+	&__social
+		display block
+
+	&__icon
+		size(15px)
+
+		fill text-primary

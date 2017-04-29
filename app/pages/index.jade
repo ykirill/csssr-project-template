@@ -13,6 +13,8 @@ include /blocks/input-group/input-group
 include /blocks/load-more/load-more
 include /blocks/button/button
 
+include /blocks/footer/footer
+
 block head
 	- var pageTitle = 'MINIMØ';
 
@@ -63,7 +65,7 @@ block content
 				title: 'Sign up for our newsletter!',
 				action: '/',
 				method: ''
-			})
+			})._gray
 				+ input-group({
 					placeholder: 'Enter a valid email address'
 				})._iconed._arrow
@@ -92,3 +94,4 @@ block content
 				title: 'Load more',
 				href: 'javascript:void(0)'
 			})
+		+ footer._gray
