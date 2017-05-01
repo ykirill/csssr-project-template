@@ -4,6 +4,7 @@ mixin previews-list(previews)
 	+b.SECTION.previews-list&attributes(attributes)
 		block
 		.container
-			+ e.__content
-				each preview in previews
-					+ preview(preview)
+			.inner__container
+				+ e.__content
+					each preview in previews
+						+ preview(preview)

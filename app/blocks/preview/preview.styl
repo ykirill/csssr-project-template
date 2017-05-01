@@ -11,6 +11,13 @@
 	&:nth-child(2n)
 		margin-left 7%
 
+
+	+between(1, 3)
+		width 100%
+
+		&:nth-child(2n)
+			margin-left 0
+
 	&__inner
 		width 100%
 	// TODO rework it fucking copy-pasted code, do DRY
@@ -26,6 +33,7 @@
 		display block
 
 		margin-bottom 40px
+
 
 	&__tag
 		margin-bottom 20px
