@@ -1,0 +1,6 @@
+include /blocks/content-link/content-link
+
+mixin content(data)
+	+b.content&attributes(attributes)
+		block
+		+ content-link(data.link)

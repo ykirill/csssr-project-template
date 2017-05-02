@@ -1,0 +1,12 @@
+include /blocks/cover/cover
+include /blocks/content/content
+
+mixin article(data)
+	+b.ARTICLE.article&attributes(attributes)
+		block
+		// article contain cover, heading, text, tag and optional
+		// link to add comment (simple link to article's page)
+		+ e.__cover
+			+ cover(data.cover)
+		+ e.__text-content
+			+ content(data.content)
